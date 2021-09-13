@@ -1,0 +1,186 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "ab550cef8baf1c8a55b56133acc5a369",
+    "entities": [
+      {
+        "tableName": "Pokemon",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`number` INTEGER NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `height` REAL NOT NULL, `weight` REAL NOT NULL, `category` TEXT NOT NULL, `mainType` TEXT NOT NULL, `types` TEXT NOT NULL, `affinities` TEXT NOT NULL, `evolutionChainId` INTEGER NOT NULL, `male` REAL NOT NULL, `female` REAL NOT NULL, `hp` TEXT NOT NULL, `attack` TEXT NOT NULL, `defense` TEXT NOT NULL, `specialAttack` TEXT NOT NULL, `specialDefense` TEXT NOT NULL, `speed` TEXT NOT NULL, `eggTypes` TEXT NOT NULL, `cyclesToHatch` INTEGER NOT NULL, PRIMARY KEY(`number`))",
+        "fields": [
+          {
+            "fieldPath": "number",
+            "columnName": "number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "height",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mainType",
+            "columnName": "mainType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "types",
+            "columnName": "types",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "affinities",
+            "columnName": "affinities",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evolutionChainId",
+            "columnName": "evolutionChainId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender.male",
+            "columnName": "male",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender.female",
+            "columnName": "female",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statistics.hp",
+            "columnName": "hp",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statistics.attack",
+            "columnName": "attack",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statistics.defense",
+            "columnName": "defense",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statistics.specialAttack",
+            "columnName": "specialAttack",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statistics.specialDefense",
+            "columnName": "specialDefense",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statistics.speed",
+            "columnName": "speed",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "breeding.eggTypes",
+            "columnName": "eggTypes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "breeding.cyclesToHatch",
+            "columnName": "cyclesToHatch",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "number"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "EvolutionChain",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `basePokemonName` TEXT NOT NULL, `basePokemonId` INTEGER NOT NULL, `evolutions` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "basePokemonName",
+            "columnName": "basePokemonName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "basePokemonId",
+            "columnName": "basePokemonId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evolutions",
+            "columnName": "evolutions",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ab550cef8baf1c8a55b56133acc5a369')"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+
+    <!-- Pokemon Type -->
+    <string name="pokemon_type_grass">Plante</string>
+    <string name="pokemon_type_fire">Feu</string>
+    <string name="pokemon_type_water">Eau</string>
+    <string name="pokemon_type_poison">Poison</string>
+    <string name="pokemon_type_normal">Normal</string>
+    <string name="pokemon_type_electric">Électrique</string>
+    <string name="pokemon_type_ice">Glace</string>
+    <string name="pokemon_type_fighting">Combat</string>
+    <string name="pokemon_type_ground">Sol</string>
+    <string name="pokemon_type_flying">Vol</string>
+    <string name="pokemon_type_psychic">Psy</string>
+    <string name="pokemon_type_bug">Insecte</string>
+    <string name="pokemon_type_rock">Roche</string>
+    <string name="pokemon_type_ghost">Spectre</string>
+    <string name="pokemon_type_dragon">Dragon</string>
+    <string name="pokemon_type_dark">Ténèbres</string>
+    <string name="pokemon_type_steel">Acier</string>
+    <string name="pokemon_type_fairy">Fée</string>
+
+    <!-- Pokemon Statistics -->
+    <string name="pokemon_stats_title">Statisques de base</string>
+    <string name="pokemon_stat_hp">Vie</string>
+    <string name="pokemon_stat_attack">Attaque</string>
+    <string name="pokemon_stat_defense">Défense</string>
+    <string name="pokemon_stat_special_attack">Attaque Spé.</string>
+    <string name="pokemon_stat_special_defense">Défense Spé.</string>
+    <string name="pokemon_stat_speed">Vitesse</string>
+    <string name="pokemon_stat_total">Total</string>
+    <string name="pokemon_stat_min">Min</string>
+    <string name="pokemon_stat_max">Max</string>
+    <string name="pokemon_stat_indication">Les valeurs minimums et maximum correspondent à un Pokémon de niveau 100</string>
+
+    <!-- Pokemon affinity -->
+    <string name="pokemon_affinity_weakness">Faiblesse</string>
+    <string name="pokemon_affinity_double_weakness">Double faiblesse</string>
+    <string name="pokemon_affinity_normal">Normal</string>
+    <string name="pokemon_affinity_strength">Résistance</string>
+    <string name="pokemon_affinity_double_strength">Double résistance</string>
+    <string name="pokemon_affinity_immunity">Immunité</string>
+
+    <!-- Pokemon about -->
+    <string name="pokemon_detail_height">Taille</string>
+    <string name="pokemon_detail_weight">Poids</string>
+    <string name="pokemon_detail_types">Types</string>
+    <string name="pokemon_detail_category">Catégorie</string>
+    <string name="pokemon_detail_sex">Genre</string>
+    <string name="pokemon_detail_level">Nv %1$d</string>
+    <string name="pokemon_detail_about">À propos</string>
+    <string name="pokemon_detail_stats">Stats</string>
+    <string name="pokemon_detail_evolution">Évolutions</string>
+    <string name="pokemon_detail_no_evolution">Ce pokemon ne possède pas d\'évolution</string>
+    <string name="pokemon_detail_evolution_chain">"Chaine d'évolution"</string>
+    <string name="pokemon_detail_affinity">Affinités</string>
+    <string name="pokemon_detail_infos">Infos</string>
+    <string name="pokemon_detail_breeding">Reproduction</string>
+    <string name="pokemon_detail_breeding_eggs">Type oeuf</string>
+    <string name="pokemon_detail_breeding_hatching">Éclosion</string>
+    <string name="pokemon_detail_breeding_steps">%1$d pas</string>
+
+
+    <plurals name="pokemon_detail_breeding_cycle">
+        <item quantity="one">cycle</item>
+        <item quantity="other">cycles</item>
+    </plurals>
+
+    <!-- Pokemon Egg types -->
+    <string name="pokemon_egg_type_amorphous">Amorphe</string>
+    <string name="pokemon_egg_type_dragon">Draconique</string>
+    <string name="pokemon_egg_type_bug">Insectoïde</string>
+    <string name="pokemon_egg_type_fairy">Féerique</string>
+    <string name="pokemon_egg_type_field">Terrestre</string>
+    <string name="pokemon_egg_type_flying">Aérien</string>
+    <string name="pokemon_egg_type_grass">Végétal</string>
+    <string name="pokemon_egg_type_human_like">Humanoïde</string>
+    <string name="pokemon_egg_type_mineral">Minéral</string>
+    <string name="pokemon_egg_type_monster">Monstrueux</string>
+    <string name="pokemon_egg_type_water_1">Aquatique 1</string>
+    <string name="pokemon_egg_type_water_2">Aquatique 2</string>
+    <string name="pokemon_egg_type_water_3">Aquatique 3</string>
+    <string name="pokemon_egg_type_ditto">Métamorph</string>
+    <string name="pokemon_egg_type_unknown">Inconnu</string>
+
+</resources>
